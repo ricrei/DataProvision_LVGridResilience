@@ -1,0 +1,182 @@
+{
+    "simBEV_version": "0.1.3",
+    "scenario": "simbev_config",
+    "timestamp_start": "2023-03-24_105259",
+    "timestamp_end": "2023-03-24_105310",
+    "config": {
+        "basic": {
+            "input_type": "probability",
+            "input_directory": "data/probability",
+            "eta_cp": "1",
+            "stepsize": "15",
+            "start_date": "2022-08-01",
+            "end_date": "2022-08-07",
+            "soc_min": "0.2",
+            "charging_threshold": "0.999"
+        },
+        "output": {
+            "vehicle_csv": "true",
+            "grid_time_series_csv": "false",
+            "plot_grid_time_series_split": "false",
+            "plot_grid_time_series_collective": "false",
+            "analyze": "false",
+            "timing": "false"
+        },
+        "rampup_ev": {
+            "rampup": "regions.csv"
+        },
+        "tech_data": {
+            "tech_data": "tech_data_spring_autumn.csv",
+            "charging_curve": "charging_curve.csv",
+            "hpc_data": "hpc_config.csv"
+        },
+        "user_data": {
+            "user_groups": "user_groups.csv"
+        },
+        "charging_probabilities": {
+            "slow": "charging_point_probability.csv",
+            "fast": "fast_charging_probability.csv",
+            "home_work_private": "home_work_private.csv",
+            "energy_min": "energy_min.csv"
+        },
+        "sim_params": {
+            "scaling": "1",
+            "num_threads": "12",
+            "seed": "2",
+            "private_only_run": "false"
+        }
+    },
+    "tech_data": {
+        "bev_mini": {
+            "max_charging_capacity_slow": 11.0,
+            "max_charging_capacity_fast": 150,
+            "battery_capacity": 70,
+            "energy_consumption": 0.126
+        },
+        "bev_medium": {
+            "max_charging_capacity_slow": 11.0,
+            "max_charging_capacity_fast": 150,
+            "battery_capacity": 100,
+            "energy_consumption": 0.148
+        },
+        "bev_luxury": {
+            "max_charging_capacity_slow": 11.0,
+            "max_charging_capacity_fast": 150,
+            "battery_capacity": 120,
+            "energy_consumption": 0.171
+        },
+        "phev_mini": {
+            "max_charging_capacity_slow": 3.7,
+            "max_charging_capacity_fast": 0,
+            "battery_capacity": 14,
+            "energy_consumption": 0.1425
+        },
+        "phev_medium": {
+            "max_charging_capacity_slow": 11.0,
+            "max_charging_capacity_fast": 0,
+            "battery_capacity": 20,
+            "energy_consumption": 0.1782
+        },
+        "phev_luxury": {
+            "max_charging_capacity_slow": 11.0,
+            "max_charging_capacity_fast": 0,
+            "battery_capacity": 30,
+            "energy_consumption": 0.2138
+        }
+    },
+    "charge_prob_slow": {
+        "work": {
+            "0": 0,
+            "3.7": 0,
+            "11.0": 0,
+            "22.0": 1,
+            "50.0": 0
+        },
+        "business": {
+            "0": 1,
+            "3.7": 0,
+            "11.0": 0,
+            "22.0": 0,
+            "50.0": 0
+        },
+        "school": {
+            "0": 1,
+            "3.7": 0,
+            "11.0": 0,
+            "22.0": 0,
+            "50.0": 0
+        },
+        "shopping": {
+            "0": 1,
+            "3.7": 0,
+            "11.0": 0,
+            "22.0": 0,
+            "50.0": 0
+        },
+        "private/ridesharing": {
+            "0": 1,
+            "3.7": 0,
+            "11.0": 0,
+            "22.0": 0,
+            "50.0": 0
+        },
+        "leisure": {
+            "0": 1,
+            "3.7": 0,
+            "11.0": 0,
+            "22.0": 0,
+            "50.0": 0
+        },
+        "home": {
+            "0": 0,
+            "3.7": 0,
+            "11.0": 1,
+            "22.0": 0,
+            "50.0": 0
+        }
+    },
+    "charge_prob_fast": {
+        "urban": {
+            "150.0": 0,
+            "350.0": 0
+        },
+        "ex-urban": {
+            "150.0": 0,
+            "350.0": 0
+        }
+    },
+    "car_sum": {
+        "bev_mini": 139,
+        "bev_medium": 182,
+        "bev_luxury": 54,
+        "phev_mini": 0,
+        "phev_medium": 0,
+        "phev_luxury": 0
+    },
+    "car_amounts": {
+        "LR_Klein": {
+            "bev_mini": 46,
+            "bev_medium": 61,
+            "bev_luxury": 18,
+            "phev_mini": 0,
+            "phev_medium": 0,
+            "phev_luxury": 0
+        },
+        "SR_Gross": {
+            "bev_mini": 47,
+            "bev_medium": 60,
+            "bev_luxury": 18,
+            "phev_mini": 0,
+            "phev_medium": 0,
+            "phev_luxury": 0
+        },
+        "SR_Klein": {
+            "bev_mini": 46,
+            "bev_medium": 61,
+            "bev_luxury": 18,
+            "phev_mini": 0,
+            "phev_medium": 0,
+            "phev_luxury": 0
+        }
+    }
+}
