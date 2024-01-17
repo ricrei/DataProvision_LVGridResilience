@@ -11,4 +11,4 @@ This study uses [SpiceEV](https://github.com/rl-institut/spice_ev) to apply four
 
 ## Electrical Profiles
 The electrical profiles comprise household loads, heat pumps, electric vehicles and PV systems as input data for the [EnergyCellLV-Modell](https://github.com/ricrei/energycell_lv_level). They are provided in the folder 'electrical_profiles' and were separated into seasonal periods. All profiles are compressed into a pickle file. To decompress them, use the script `decompress_inputfiles.py`.
-These profiles can be applied to different low-voltage grids. In this study, the Simbench grids were examined. The results are the loading of lines and transformers and the voltage per bus.
+These profiles can be applied to different low-voltage grids by conducting power flow calculations to evaluate the grid stress. In this study, the Simbench grids were examined.
