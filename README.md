@@ -3,7 +3,7 @@ This is a supplement to the Paper "Low Voltage Grid Resilience: Evaluating Elect
 
 ## Driving Profiles
 
-The driving profiles are generated with the open source tool [SimBEV](https://github.com/rl-institut/simbev). SimBEV uses the database of the regularly updated study “Mobility in  Germany”, the biggest survey about daily mobility behaviourin Germany. The driving profiles include driving and idle events and are provided in the folder 'driving_profiles'. Each driving event includes information about the used energy, each standing event includes the location and the maximum power of the possible charging point. For the paper driving profiles of one week for every season were generated, since energy consumption of the BEVs differs between seasons. The assumption is made, that the BEVs charge exclusively at home.
+The driving profiles are generated with the open source tool [SimBEV](https://github.com/rl-institut/simbev). SimBEV uses the database of the regularly updated study “Mobility in  Germany”, the biggest survey about daily mobility behaviour in Germany. The driving profiles include driving and idle events and are provided in the folder 'driving_profiles'. Each driving event includes information about the used energy, each standing event includes the location and the maximum power of the possible charging point. For the paper driving profiles of one week for every season were generated, since energy consumption of the BEVs differs between seasons. The assumption is made, that the BEVs charge exclusively at home.
 
 ## Charging Profiles
 
